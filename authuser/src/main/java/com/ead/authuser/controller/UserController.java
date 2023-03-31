@@ -41,8 +41,6 @@ public class UserController {
     }
 
 
-
-
     @DeleteMapping
     public ResponseEntity<Object> deleteuser( @PathVariable(value = "userId") UUID userId ){
 
@@ -61,7 +59,8 @@ public class UserController {
 
 
     @PutMapping("/{userId}")
-    public ResponseEntity<Object> updateUser(@PathVariable(value = "userId") UUID userId, @RequestBody UserDto userDto ){
+    public ResponseEntity<Object> updateUser(@PathVariable(value = "userId") UUID userId,
+                                             @RequestBody @JsonView(UserDto.UserView.UserPut.class) UserDto userDto ){
 
         Optional<UserModel> userModelOptional = userService.findById(userId);
 
