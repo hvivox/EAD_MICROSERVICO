@@ -1,4 +1,4 @@
-package com.ead.authuser.controller;
+package com.ead.authuser.controllers;
 
 
 import com.ead.authuser.dtos.UserDto;
