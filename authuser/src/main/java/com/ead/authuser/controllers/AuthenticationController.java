@@ -29,7 +29,6 @@ public class AuthenticationController {
     @PostMapping("/signup")
     public ResponseEntity<Object> registerUser(@RequestBody @Validated(UserDto.UserView.RegistrationPost.class)
                                                    @JsonView(UserDto.UserView.RegistrationPost.class) UserDto userDto){
-
         log.debug("POST registerUser userDto received {} ", userDto.toString());
         if(userService.existsByUsername(userDto.getUsername())){
             log.warn("Username {} is Already Taken ", userDto.getUsername());
@@ -46,7 +45,7 @@ public class AuthenticationController {
         userModel.setCreationDate(LocalDateTime.now(ZoneId.of("UTC")));
         userModel.setLastUpdateDate(LocalDateTime.now(ZoneId.of("UTC")));
         userService.save(userModel);
-        log.debug("POST registerUser userModel saved {} ", userModel.toString());
+        log.debug("POST registerUser userId saved {} ", userModel.getUserId());
         log.info("User saved successfully userId {} ", userModel.getUserId());
         return  ResponseEntity.status(HttpStatus.CREATED).body(userModel);
     }
