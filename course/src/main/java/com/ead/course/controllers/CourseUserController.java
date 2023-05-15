@@ -43,7 +43,7 @@ public class CourseUserController {
         return ResponseEntity.status(HttpStatus.OK).body(authUserClient.getAllUsersByCourse(courseId, pageable));
     }
 
-    /*
+    
     @PostMapping("/courses/{courseId}/users/subscription")
     public  ResponseEntity<Object> saveSubscriptionUserInCourse(@PathVariable(value = "courseId") UUID courseId,
                                                                 @RequestBody @Valid SubscriptionDto subscriptionDto){
@@ -65,10 +65,11 @@ public class CourseUserController {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found.");
             }
         }
-        CourseUserModel courseUserModel = courseUserService.saveAndSendSubscriptionUserInCourse(courseModelOptional.get().convertToCourseUserModel(subscriptionDto.getUserId()));
+        CourseUserModel courseUserModel = courseUserService.saveAndSendSubscriptionUserInCourse(courseModelOptional.get()
+                .convertToCourseUserModel(subscriptionDto.getUserId()));
         return ResponseEntity.status(HttpStatus.CREATED).body(courseUserModel);
     }
     
-    */
+    
     
 }

@@ -1,6 +1,5 @@
 package com.ead.course.models;
 
-import com.ead.course.models.CourseModel;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
