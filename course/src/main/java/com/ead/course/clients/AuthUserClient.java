@@ -30,11 +30,10 @@ public class AuthUserClient {
     @Autowired
     UtilsService utilsService;
 
-    /*@Value("${ead.api.url.authuser}")
-    String REQUEST_URL_AUTHUSER;*/
-    String REQUEST_URL_AUTHUSER = "http://localhost:8087";
+    @Value("${ead.api.url.authuser}")
+    String REQUEST_URL_AUTHUSER;
+    //String REQUEST_URL_AUTHUSER = "http://localhost:8087";
     
-
     public Page<UserDto> getAllUsersByCourse(UUID courseId, Pageable pageable){
         List<UserDto> searchResult = null;
         String url = REQUEST_URL_AUTHUSER + utilsService.createUrlGetAllUsersByCourse(courseId, pageable);
