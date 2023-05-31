@@ -22,12 +22,14 @@ Este repositório contém o projeto "EAD_MICROSERVICO", que é um sistema de ens
 
     O microserviço Service Registry é responsável pelo registro e descoberta de serviços dentro da arquitetura de microserviços. Ele permite que os microserviços se registrem e se comuniquem entre si de forma dinâmica.
 
-| :placard: Vitrine.Dev |                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **EAD_MICROSERVICOS**                                                                                                                                                                                                                                                                                                                                                                                           |
-| :label: Tecnologias   | java, springboot, spring-mvc, spring-data-jpa, API Rest com spring-web, jsonView (Multipas Visualizações), spring Validation, lombok, paginação, Filtros com Specification, dto, exceptionHandler, hateoas, comunicação sincrona, API composition Partern, Service Registry com Spring Cloud Neflix Eureka, base de dados compartilhadas por microserviços, Eureka Clients nos Microservices de Negócio, Log4J2 |
-| :rocket: URL          | https://localhost                                                                                                                                                                                                                                                                                                                                                                                               |
-| :fire: Desafio        | https://www.decoderproject.com/lista-espera                                                                                                                                                                                                                                                                                                                                                                     |
+
+
+| :placard: Vitrine.Dev  |     |
+|------------------------| --- |
+| :sparkles: Nome        | **EAD_MICROSERVICOS**
+| :label: Tecnologias    | java, springboot, spring-mvc, spring-data-jpa, API Rest com spring-web, jsonView (Multipas Visualizações), spring Validation, lombok, paginação, Filtros com Specification, dto, exceptionHandler, hateoas, comunicação sincrona, API composition Partern, Service Registry com Spring Cloud Neflix Eureka, base de dados compartilhadas por microserviços, Eureka Clients nos Microservices de Negócio, Log4J2
+| :rocket: URL           | https://localhost
+| :fire: Desafio         | https://www.decoderproject.com/lista-espera   
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 
