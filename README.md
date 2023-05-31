@@ -2,6 +2,8 @@
 
 Este repositório contém o projeto "EAD_MICROSERVICO", que é um sistema de ensino a distância baseado em microserviços. O sistema é composto por três microserviços distintos: Authuser, Course, Notification e Service Registry. Cada microserviço é responsável por uma funcionalidade específica do sistema.
 
+- Até o momento foi desenvolvido 50% da aplicação em relação ao diagrama mostrado a baixo.
+
 ## Microserviços
 
 ### Authuser
