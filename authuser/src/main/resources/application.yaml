@@ -1,11 +1,14 @@
-
+# PORTA DO SERVICO
 server:
   port: 8087
 
-
+#CONGIURAÇÃO DO SPRING
 spring:
+ # SERVICE REGISTRE - NOME DO SERVICO
   application:
     name: ead-authuser-service
+
+  #DATABASE
   datasource:
     url:  jdbc:postgresql://localhost:5432/ead-authuser
     username: postgres
@@ -23,6 +26,7 @@ spring:
       ansi:
           enabled: Always
 
+# LOGGING
 logging:
     level:
         com.ead: TRACE
@@ -30,6 +34,14 @@ logging:
         org.springframework.web: DEBUG
         org.hibernate: INFO
 
+# ENDEREÇO DE ACESSO AO SERVICO
+ead:
+    api:
+        url:
+            course: 'http://ead-course-service'
+
+
+# ENDERECO SERVICEREGISTRE
 eureka:
     client:
         serviceUrl:
