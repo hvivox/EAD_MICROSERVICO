@@ -63,3 +63,6 @@ Este repositório contém o projeto "EAD_MICROSERVICO", que é um sistema de ens
 
 1. Cada microserviço possui sua própria funcionalidade e endpoints específicos.
 2. Interaja com os microserviços através de suas APIs para gerenciar usuários, cursos e notificações.
+
+
+![](https://github.com/hvivox/EAD_MICROSERVICO/blob/main/DIAG_PROJETO_EAD.png?raw=true?text=srealizacao#vitrinedev)
